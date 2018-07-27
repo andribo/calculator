@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>React Assignment</title>
+    <script src="https://unpkg.com/react@16.2.0/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16.2.0/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+    <script src="https://unpkg.com/mathjs@5.0.4/dist/math.min.js" crossorigin></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="root" class="row"></div>
+    </div>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./helpers/formInputString.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./services/storage.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./services/keyboardBuilder.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./services/keyboardListener.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./components/Button/Button.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./components/Display/Display.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./components/Keyboard/Keyboard.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel" src="./app.js"></script>
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel">
+      import { App } from './app'
+
+      ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+      )
+    </script>
+  </body>
+</html>
